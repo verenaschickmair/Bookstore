@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7aa15f1d-a8a9-4ecd-8b05-a120c04e2440" name="HETZNER" url="http://bookstore22.s1910456028.student.kwmhgb.at/">
+        <fileTransfer rootFolder="/usr/home/sstud783/public_html/bookstore22/bookstoreServer" accessType="SFTP" host="s1910456028.student.kwmhgb.at" port="222" sshConfigId="62d48730-bedc-4e99-a22d-2eb6be0ab58c" sshConfig="sstud783@s1910456028.student.kwmhgb.at:222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
