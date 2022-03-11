@@ -22,6 +22,11 @@ class CreateBooksTable extends Migration
             $table->date('published')->nullable();
             $table->integer('rating')->default('1');
             $table->text('description')->nullable();
+
+            //fk user constraint -> neue Laravel 8 Schreibweise
+            $table->foreignId('user_id')
+                ->constrained()
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }
