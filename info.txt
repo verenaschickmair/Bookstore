@@ -1,0 +1,16 @@
+php artisan optimize:clear  Cache leeren von Laravel
+ORM  Object Relational Mapping  Entitätenrelationenmodell, für Objektorientierte Programmierung  Hibernate von Java ist bekanntestes Framework
+Eloquent  ORM für Laravel
+Für Model Einzahl und Groß schreiben  php artisan make:model Book
+php artisan tinker  zum Testen der Relation
+App\Models\Book::all();  gibt typisierte Objekte zurück
+App\Models\Book::where('id','>','1')->get();  auch filtern möglich
+App\Models\Book::pluck('title')  nur ein Attribut von allen holen
+>>> App\Models\Book::first()->isFavorite();  ersten Datensatz überprüfen
+exit
+Mit migrate, refresh und seed kann die Datenbank wieder komplett neu aufgesetzt werden (je nachdem was im Seeder drinnsteht wird raufgeladen)
+php artisan make:model Image -m  Modeldatei mit vorbereiteter Migration
+php artisan migrate:refresh
+php artisan db:seed
+oder php artisan migrate:refresh –seed
+Seeder erstellen: php artisan make:seeder UsersTableSeeder
