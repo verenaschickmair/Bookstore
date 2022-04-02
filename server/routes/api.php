@@ -4,7 +4,6 @@ use App\Http\Controllers\BookController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\JsonResponse;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,8 +19,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('books', [BookController::class, 'index']);
-Route::post('books', [BookController::class, 'save']);
-Route::get('books/{isbn}', [BookController::class, 'findByISBN']);
-Route::get('books/checkisbn/{isbn}', [BookController::class, 'checkISBN']);
-Route::get('books/search/{searchTerm}', [BookController::class, 'findBySearchTerm']);
+Route::get('books',[BookController::class,'index']);
+Route::post('books', [BookController::class,'save']);
+Route::get('books/{isbn}', [BookController::class,'findByISBN']);
+Route::get('books/checkisbn/{isbn}', [BookController::class,'checkISBN']);
+Route::get('books/search/{searchTerm}', [BookController::class,'findBySearchTerm']);
+Route::put('books/{isbn}', [BookController::class,'update']);
+Route::delete('books/{isbn}', [BookController::class,'delete']);

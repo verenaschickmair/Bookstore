@@ -1,0 +1,10 @@
+<img alt="" class="ui tiny image" *ngIf="book && book.images && book.images[0]" [src]="book.images[0].url">
+<div class="content">
+  <div class="header">{{book?.title}}</div>
+  <div class="description">{{book?.subtitle}}</div>
+  <span *ngFor="let author of book?.authors; last as l">
+          {{author.firstName}} {{author.lastName}} <span *ngIf="!l">|</span>
+        </span>
+  <div class="extra">{{book?.isbn}}</div>
+  <button (click)="myClickHandler()">Click me</button>
+</div>
