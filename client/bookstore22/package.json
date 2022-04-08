@@ -1,5 +1,5 @@
 {
-  "name": "bookstore22",
+  "name": "bookstore",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -24,7 +24,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^13.3.0",
+    "@angular-devkit/build-angular": "~13.2.3",
     "@angular/cli": "~13.2.3",
     "@angular/compiler-cli": "~13.2.0",
     "@types/jasmine": "~3.10.0",

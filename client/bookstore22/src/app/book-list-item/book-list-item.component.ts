@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {Book} from "../shared/book";
+import { Component, Input, OnInit } from '@angular/core';
+import { Book } from "../shared/book";
 
 @Component({
   selector: 'a.bs-book-list-item',
@@ -9,14 +9,12 @@ import {Book} from "../shared/book";
 })
 export class BookListItemComponent implements OnInit {
 
-  @Input() book : Book | undefined;
-
+  @Input() book: Book | undefined;
   constructor() { }
+
   ngOnInit(): void {
   }
 
-  public myClickHandler(){
-    console.log("clicked")
-  }
+
 
 }
