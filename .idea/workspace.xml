@@ -2,22 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac8859b3-f14e-4a71-bf61-069bbd32edc3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/bookstore22/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bookstore22/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bookstore22/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/app.component.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/book-details/book-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/book-details/book-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/book-details/book-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/book-details/book-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/book-form/book-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/book-form/book-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/book-form/book-form.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/book-form/book-form.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/book-form/book-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/book-form/book-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/book-list-item/book-list-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/book-list-item/book-list-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/book-list-item/book-list-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/book-list-item/book-list-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/book-list/book-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/book-list/book-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/book-list/book-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/book-list/book-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/search/search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/search/search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/search/search.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/search/search.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/search/search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/search/search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/shared/author.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/shared/author.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/shared/author.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/shared/author.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/shared/book-factory.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/shared/book-factory.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/shared/book-factory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/shared/book-factory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/shared/book-store.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/shared/book-store.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/shared/book-store.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/shared/book-store.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/shared/book.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/shared/book.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/shared/book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/shared/book.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/shared/image.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/shared/image.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/app/shared/image.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/app/shared/image.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/environments/environment.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/bookstore22/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/Http/Controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookstore22/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookstore22/src/test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/server/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -151,7 +179,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../StudentSupportFrontend-main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -160,6 +188,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="ts.external.directory.path" value="D:\KWM\6_SEM\Webentwicklung\client\bookstore22\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -178,6 +207,9 @@
       <workItem from="1648194613688" duration="2313000" />
       <workItem from="1648715566349" duration="414000" />
       <workItem from="1648792415012" duration="50000" />
+      <workItem from="1649760798050" duration="1505000" />
+      <workItem from="1649843287335" duration="2362000" />
+      <workItem from="1650221215539" duration="710000" />
     </task>
     <servers />
   </component>
