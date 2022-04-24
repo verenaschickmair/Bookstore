@@ -1,6 +1,6 @@
 <h1>Buchformular</h1>
 
-<form class="ui large form" [formGroup]="bookForm" (ngSubmit)="submitForm()">
+<form class="ui large form" [formGroup]="bookForm" (submit)="submitForm()">
 
 <input type="hidden" formControlName="id">
 
@@ -41,15 +41,15 @@
 <div class="field">
     <label>Bilder</label>
     <div formArrayName="images">
-        <div class="fields" *ngFor="let control of images?.controls; index as i; last as l" 
+        <div class="fields" *ngFor="let control of images?.controls; index as i; last as l"
             [formGroupName]="i">
             <input type="hidden" formControlName="id">
             <div class="nine wide field">
                 <input formControlName="url" placeholder="https://bild{{i+1}}_url">
-            </div>  
+            </div>
             <div class="six wide field">
                 <input formControlName="title"  placeholder="bild{{i+1}}_title">
-            </div>  
+            </div>
             <div class="one wide field" *ngIf="l">
                 <button (click)="addThumbnailControl()" class="ui large button" type="button">+</button>
             </div>

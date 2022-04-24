@@ -15,9 +15,9 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         $user = new User;
-        $user->name="testuser";
-        $user->email="test@mail.com";
-        $user->password=bcrypt('secret');
+        $user->name = "testuser";
+        $user->email = "test@gmail.com";
+        $user->password = bcrypt('secret');
         $user->save();
     }
 }

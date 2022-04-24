@@ -10,10 +10,10 @@ import { catchError, retry } from 'rxjs/operators';
 export class BookStoreService {
 
 
-  private api = 'https://bookstore22.putz.kwmhgb.at/api';
+  private api = 'http://bookstore22.s1910456028.student.kwmhgb.at/api';
 
-  constructor(private http: HttpClient) { 
-  
+  constructor(private http: HttpClient) {
+
   }
 
 
@@ -37,6 +37,9 @@ export class BookStoreService {
     return this.http.put(`${this.api}/books/${book.isbn}`, book).pipe(retry(3)).pipe(catchError(this.errorHandler));
   }
 
+  create(book: Book) : Observable<any> {
+    return this.http.post(`${this.api}/books`, book).pipe(retry(3)).pipe(catchError(this.errorHandler));
+  }
   private errorHandler(error: Error | any): Observable<any> {
     return throwError(() => new Error(error));
   }
