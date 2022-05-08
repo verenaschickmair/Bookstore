@@ -5,6 +5,7 @@ import { Book } from '../shared/book';
 import { BookFactory } from '../shared/book-factory';
 import { BookStoreService } from '../shared/book-store.service';
 import { BookFormErrorMessages } from './book-form-error-messages';
+import {BookValidators} from "../shared/book-validators";
 
 @Component({
   selector: 'bs-book-form',
@@ -23,7 +24,7 @@ export class BookFormComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private bs: BookStoreService,
-    private route: ActivatedRoute, 
+    private route: ActivatedRoute,
     private router: Router,
   ) {
     this.bookForm = this.fb.group({});
@@ -49,14 +50,15 @@ export class BookFormComponent implements OnInit {
 
     this.buildThumbnailsArray();
     this.bookForm = this.fb.group({
-      id: this.book.id, 
-      title: [this.book.title, Validators.required], 
-      subtitle: this.book.subtitle, 
+      id: this.book.id,
+      title: [this.book.title, Validators.required],
+      subtitle: this.book.subtitle,
       isbn: [
         this.book.isbn, [
           Validators.required,
           Validators.minLength(10),
-          Validators.maxLength(13)
+          Validators.maxLength(13),
+          BookValidators.isbnExists(this.bs),
         ]
       ],
       description: this.book.description,
@@ -70,7 +72,7 @@ export class BookFormComponent implements OnInit {
       published: [this.book.published, Validators.required]
     });
 
-    this.bookForm.statusChanges.subscribe(() => 
+    this.bookForm.statusChanges.subscribe(() =>
       this.updateErrorMessages()
     )
   }
@@ -103,17 +105,17 @@ export class BookFormComponent implements OnInit {
       const control = this.bookForm.get(message.forControl);
       if (
 
-        control && 
-        control.dirty && 
-        control.invalid && control.errors && 
-        control.errors[message.forValidator] && 
+        control &&
+        control.dirty &&
+        control.invalid && control.errors &&
+        control.errors[message.forValidator] &&
         !this.errors[message.forControl]
       ) {
         this.errors[message.forControl] = message.text;
-      } 
-    }  
+      }
+    }
 
-  
+
   }
 
 
@@ -123,7 +125,7 @@ export class BookFormComponent implements OnInit {
       (thumbnail: { url: string; }) => thumbnail.url
     );
 
-    const book: Book = BookFactory.fromObject(this.bookForm.value);  
+    const book: Book = BookFactory.fromObject(this.bookForm.value);
 
     book.authors = this.book.authors;
 
@@ -134,7 +136,7 @@ export class BookFormComponent implements OnInit {
         });
 
       });
-    } else { 
+    } else {
       book.user_id = 1;
       this.bs.create(book).subscribe(res => {
         this.book = BookFactory.empty();

@@ -26,7 +26,6 @@ class Book extends Model
     //hasMany Relation 1:n
     public function images() : hasMany{
         return $this->hasMany(Image::class);
-
     }
 
     //belongsTo Relation n:1

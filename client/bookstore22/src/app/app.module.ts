@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BookListComponent } from './book-list/book-list.component';
@@ -14,7 +14,14 @@ import { BookFormComponent } from './book-form/book-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { AuthenticationService } from './shared/authentication.service';
+import {registerLocaleData} from "@angular/common";
+import localDe from "@angular/common/locales/de";
+import {TokenInterceptorService} from "./shared/token-interceptor.service";
+import {ToastrModule} from "ngx-toastr";
+import {JwtInterceptorService} from "./shared/jwt-interceptor.service";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
+registerLocaleData(localDe);
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +31,28 @@ import { AuthenticationService } from './shared/authentication.service';
     HomeComponent,
     SearchComponent,
     BookFormComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
-    BrowserModule, AppRoutingModule, HttpClientModule, ReactiveFormsModule 
+    BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, ReactiveFormsModule, ToastrModule.forRoot()
   ],
-  providers: [BookStoreService, AuthenticationService],
+  providers: [BookStoreService, AuthenticationService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: JwtInterceptorService,
+      multi: true
+    },
+    // {
+    //   provide: LOCALE_ID,
+    //   useValue: 'de'
+    // }
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

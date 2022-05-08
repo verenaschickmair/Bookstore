@@ -24,7 +24,7 @@
         </div>
         <div class="four wide column">
           <h4 class="ui header">Rating</h4>
-         <div class="ui star rating" *ngIf="book.rating"> 
+         <div class="ui star rating" *ngIf="book.rating">
          <i *ngFor="let r of getRating(book.rating)" class="yellow star icon"></i>
        </div>
         </div>
@@ -41,17 +41,17 @@
     </div>
    </div>
 
-  
 
-   <a class="ui tiny yellow labeled icon button" [routerLink]="['../../admin', book?.isbn]">
+
+   <a *ngIf="authService.isLoggedIn()" class="ui tiny yellow labeled icon button" [routerLink]="['../../admin', book?.isbn]">
      <i class="write icon"></i> Buch bearbeiten
    </a>
 
-   <button class="ui tiny red labeled icon button" 
+   <button *ngIf="authService.isLoggedIn()" class="ui tiny red labeled icon button"
       (click)="removeBook()">
     <i class="remove icon"></i>
     Buch löschen
   </button>
 
   <hr />
-  <button  [routerLink]="'/books'" class="ui red button">Zurück zur Liste</button>
+  <button [routerLink]="'/books'" class="ui red button">Zurück zur Liste</button>

@@ -5,6 +5,7 @@ import { BookFormComponent } from "./book-form/book-form.component";
 import { BookListComponent } from "./book-list/book-list.component";
 import { HomeComponent } from "./home/home.component";
 import { LoginComponent } from "./login/login.component";
+import {CanNavigateToAdminGuard} from "./can-navigate-to-admin.guard";
 
 
 const routes: Routes = [
@@ -12,8 +13,8 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'books', component: BookListComponent },
     { path: 'books/:isbn', component: BookDetailsComponent },
-    { path: 'admin', component: BookFormComponent },
-    { path: 'admin/:isbn', component: BookFormComponent },
+    { path: 'admin', component: BookFormComponent, canActivate:[CanNavigateToAdminGuard] },
+    { path: 'admin/:isbn', component: BookFormComponent, canActivate:[CanNavigateToAdminGuard] },
     { path: 'login', component: LoginComponent }
 ];
 
@@ -21,7 +22,7 @@ const routes: Routes = [
 @NgModule ({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule],
-    providers: []
+    providers: [CanNavigateToAdminGuard]
 
 })
 
